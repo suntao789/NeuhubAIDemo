@@ -1,7 +1,7 @@
 security:
   oauth2:
     client:
-      access-token-uri: http://nanan.aiauth.jdcloud.com/oauth/token
+      access-token-uri: https://nanan.aiauth.jdcloud.com/oauth/token
 
 gateway:
   url: https://nanan.aiapi.jdcloud.com
