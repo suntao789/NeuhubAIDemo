@@ -217,7 +217,6 @@ public class NeuhubAIDemoTester {
 
     @Test
     public void faceGroupCreate() {
-        //groupName为分组名称
         /**
          * groupName为用户创建分组的名称，根据分组名称完成创建后可以获得groupId，
          * 通过{@link NeuhubAIDemoTester#getFaceGroupList()} 查看分组信息
@@ -237,7 +236,6 @@ public class NeuhubAIDemoTester {
 
     @Test
     public void faceCreate() {
-        //groupId为创建的人脸分组ID，outerId为待创建的人脸ID
         byte[] data = dataBinary(picture);
         String encodedText = imageBase64(data);
         String param = String.format("imageBase64=%s", encodedText);
@@ -246,7 +244,7 @@ public class NeuhubAIDemoTester {
          *  groupId需要调接口去创建
          *  {@link NeuhubAIDemoTester#faceGroupCreate()}
          */
-        String groupId = "bfaca672-d954-4207-8e35-26aeeb276d71";
+        String groupId = "c0a0ed2b-a355-48c7-a4f7-c702fda26308";
         /**
          * 人脸图片的id值，用户自己生成，自己控制去重
          */
@@ -271,10 +269,10 @@ public class NeuhubAIDemoTester {
         String groupId = "bfaca672-d954-4207-8e35-26aeeb276d71";
         String outerId = "0726testFace1";
         HttpEntity<Object> requestEntity = new HttpEntity<>(null, null);
-        String requestUrl = gatewayUrl + "/neuhub/faceDelete?groupId=bfaca672-d954-4207-8e35-26aeeb276d71&groupName=&outerId=0726testFace1";
+        String requestUrl = gatewayUrl + "/neuhub/faceDelete?groupId=c0a0ed2b-a355-48c7-a4f7-c702fda26308&groupName=&outerId=0726testFace1";
         ResponseEntity<String> responseEntity = null;
         try {
-            responseEntity = restTemplate.postForEntity(requestUrl, requestEntity, String.class);
+            responseEntity = restTemplate.getForEntity(requestUrl, String.class);
         } catch (Exception e) {
             //调用API失败，错误处理
             throw new RuntimeException(e);
