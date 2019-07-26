@@ -1,0 +1,7 @@
+security:
+  oauth2:
+    client:
+      access-token-uri: http://jinan.aiauth.jdcloud.com/oauth/token
+
+gateway:
+  url: https://jinan.aiapi.jdcloud.com

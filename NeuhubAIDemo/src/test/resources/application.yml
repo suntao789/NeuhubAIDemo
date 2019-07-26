@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: test # 这里填写你的城市，如西安则填写xian，南京填写nanjing
+  application:
+    name: neuhub-demo
+security:
+  oauth2:
+    client:
+      grant-type: client_credentials
+      client-id: 27c0291a6c6de89cd15fd8ecbd99e5f9 #填写你的client id，当前为测试环境client id
+      clientSecret: 1-unMjSHP^ #填写你的client secret，当前为测试环境client secret
+
+neuhub:
+  picture: D:\Demo2.jpg # 此处为测试图片的绝对路径，具体想使用的图片请填写对应的图片存放路径
+  pictureCompare: D:\Face2.jpg # 此处为测试人脸对比接口的图片地址，具体想使用的图片请填写对应的图片存放路径
+  comment: 此处为的比较内容 # 此处为测试评论相关接口的设置，请自行修改评论内容
+  commentCompare: 此处为的比较内容 # 此处为测试短文本相似度接口的内容，请自行修改
