@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: test # 这里填写你的城市，如西安则填写xian，南京填写nanjing
+    active: nanjing # 这里填写你的城市，如西安则填写xian，南京填写nanjing
   application:
     name: neuhub-demo
 security:

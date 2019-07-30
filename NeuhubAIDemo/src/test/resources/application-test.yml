@@ -1,7 +1,0 @@
-security:
-  oauth2:
-    client:
-      access-token-uri: http://ai.authorization.midplatform.jdcloud.com/oauth/token
-
-gateway:
-  url: http://test.ai.gateway.midplatform.jdcloud.com
