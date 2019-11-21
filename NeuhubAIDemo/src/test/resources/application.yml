@@ -1,6 +1,10 @@
 spring:
   profiles:
-    active: nanjing # 这里填写你的城市，如西安则填写xian，南京填写nanjing
+    active: xian  # 这里填写你的城市，
+                  # 如西安则填写 xian
+                  # 南京填写 nanjing
+                  # 济南填写 jinan
+                  # 重庆南岸填写nanan
   application:
     name: neuhub-demo
 security:
